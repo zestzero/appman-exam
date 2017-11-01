@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+.TextInput {
+    &--default {
+        margin-top: 1rem;
+    }
+    &-Line {
+        margin-top: 1rem;
+    }
+    &-Input {
+        &--default {
+            padding: 1rem;
+            border: 1px solid $ghostwhite;
+            border-radius: 1rem;
+            width: 90%;
+        }
+        &--default:focus {
+            border-color: $darkgrey;
+        }
+    }
+}

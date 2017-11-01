@@ -1,9 +1,9 @@
+@import 'variables';
 :global {
     // global style here
     .logo-spin {
         animation: App-logo-spin infinite 3s linear;
     }
-
     @keyframes App-logo-spin {
         from {
             transform: rotate(0deg);
@@ -12,4 +12,13 @@
             transform: rotate(360deg);
         }
     }
+}
+
+body {
+    background-color: $ghostwhite;
+    font-size: $font-size;
+}
+
+.hide {
+    display: none;
 }

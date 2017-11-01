@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+.Button {
+    &--default {
+        background-color: $deepblue;
+        color: $white;
+        border-radius: 5px;
+        border: 1px $deepblue solid;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+}

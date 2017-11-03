@@ -49,7 +49,7 @@ exports.updateStudentScore = (store, { name, scores }) => {
  * @params {String} subject
  */
 exports.removeStudentScoreBySubject = (store, { name, subject }) => {
-    const getRemovedStudent = (students, name) => {
+    const getFilteredStudents = (students, name) => {
         return _.filter(students, (s) => { return s.name !== name; });
     };
 
@@ -57,7 +57,7 @@ exports.removeStudentScoreBySubject = (store, { name, subject }) => {
         return _.map(store, (s) => {
             return {
                 subject: s.subject,
-                students: s.subject === subject ? getRemovedStudent(s.students, name) : s.students
+                students: s.subject === subject ? getFilteredStudents(s.students, name) : s.students
             };
         });
 
